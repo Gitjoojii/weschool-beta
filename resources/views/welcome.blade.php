@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Unifiedtransform</title>
+        <title>We-School</title>
 
         <link rel="shortcut icon" href="{{asset('favicon_io/favicon.ico')}}">
         <link rel="shortcut icon" sizes="16x16" href="{{asset('favicon_io/favicon-16x16.png')}}">
@@ -34,7 +34,7 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                     @else
-                        <a href="{{ route('login') }}" class="text-gray-900 dark:text-white" style="border: 1px solid #1a202c;padding: 5px;border-radius: 5px;">Login</a>
+                        <a href="{{ route('login') }}" class="text-gray-900 dark:text-black" style="border: 1px solid #000000;padding: 5px;border-radius: 5px;">Login</a>
 
                         {{-- @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
