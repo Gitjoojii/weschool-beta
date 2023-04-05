@@ -31,9 +31,9 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
+                    // 'address2'      => $request['address2'],
                     'city'          => $request['city'],
-                    'zip'           => $request['zip'],
+                    // 'zip'           => $request['zip'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'role'          => 'teacher',
                     'password'      => Hash::make($request['password']),
@@ -77,13 +77,13 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
+                    // 'address2'      => $request['address2'],
                     'city'          => $request['city'],
-                    'zip'           => $request['zip'],
+                    // 'zip'           => $request['zip'],
                     'photo'         => (!empty($request['photo']))?$this->convert($request['photo']):null,
                     'birthday'      => $request['birthday'],
-                    'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
+                    // 'religion'      => $request['religion'],
+                    // 'blood_type'    => $request['blood_type'],
                     'role'          => 'student',
                     'password'      => Hash::make($request['password']),
                 ]);
@@ -129,12 +129,12 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
+                    // 'address2'      => $request['address2'],
                     'city'          => $request['city'],
-                    'zip'           => $request['zip'],
+                    // 'zip'           => $request['zip'],
                     'birthday'      => $request['birthday'],
-                    'religion'      => $request['religion'],
-                    'blood_type'    => $request['blood_type'],
+                    // 'religion'      => $request['religion'],
+                    // 'blood_type'    => $request['blood_type'],
                 ]);
 
                 // Update Parents' information
@@ -161,9 +161,9 @@ class UserRepository implements UserInterface {
                     'nationality'   => $request['nationality'],
                     'phone'         => $request['phone'],
                     'address'       => $request['address'],
-                    'address2'      => $request['address2'],
+                    // 'address2'      => $request['address2'],
                     'city'          => $request['city'],
-                    'zip'           => $request['zip'],
+                    // 'zip'           => $request['zip'],
                 ]);
             });
         } catch (\Exception $e) {
