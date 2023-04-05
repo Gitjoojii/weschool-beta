@@ -105,12 +105,12 @@
                             </div>
                             <div class="col-md-4 mb-4">
                                 <div class="p-3 border bg-light shadow-sm">
-                                    <h6>Create Class</h6>
+                                    <h6>Create Major</h6>
                                     <form action="{{route('school.class.create')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="session_id" value="{{$current_school_session_id}}">
                                         <div class="mb-3">
-                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Class name" aria-label="Class name" required>
+                                            <input type="text" class="form-control form-control-sm" name="class_name" placeholder="Major name" aria-label="Major name" required>
                                         </div>
                                         <button class="btn btn-sm btn-outline-primary" type="submit"><i class="bi bi-check2"></i> Create</button>
                                     </form>
