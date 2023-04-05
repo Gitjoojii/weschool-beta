@@ -12,3 +12,5 @@ TO DOWNLOAD FILE
 5. php artisan migrate --seed
 
 6. php artisan serve
+
+PS: LOOK AT DB_PORT, DB_HOST, DB NAME  (MAKE SURE TO CREATE database in MYSQL)
