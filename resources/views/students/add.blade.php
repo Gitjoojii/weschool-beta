@@ -56,18 +56,18 @@
                                     <label for="inputAddress" class="form-label">Address<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputAddress" name="address" placeholder="634 Main St" required value="{{old('address')}}">
                                 </div>
-                                <div class="col-3-md">
+                                {{-- <div class="col-3-md">
                                     <label for="inputAddress2" class="form-label">Address 2</label>
                                     <input type="text" class="form-control" id="inputAddress2" name="address2" placeholder="Apartment, studio, or floor" value="{{old('address2')}}">
-                                </div>
+                                </div> --}}
                                 <div class="col-md-3">
                                     <label for="inputCity" class="form-label">City<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputCity" name="city" placeholder="Dhaka..." required value="{{old('city')}}">
                                 </div>
-                                <div class="col-md-3">
+                                {{-- <div class="col-md-3">
                                     <label for="inputZip" class="form-label">Zip<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputZip" name="zip" required value="{{old('zip')}}">
-                                </div>
+                                </div> --}}
                                 <div class="col-md-3">
                                     <label for="inputState" class="form-label">Gender<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputState" class="form-select" name="gender" required>
@@ -79,7 +79,7 @@
                                     <label for="inputNationality" class="form-label">Nationality<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputNationality" name="nationality" placeholder="e.g. Bangladeshi, German, ..." required value="{{old('nationality')}}">
                                 </div>
-                                <div class="col-md-4">
+                                {{-- <div class="col-md-4">
                                     <label for="inputBloodType" class="form-label">BloodType<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputBloodType" class="form-select" name="blood_type" required>
                                         <option {{old('blood_type') == 'A+' ? 'selected' : ''}}>A+</option>
@@ -91,9 +91,9 @@
                                         <option {{old('blood_type') == 'AB+' ? 'selected' : ''}}>AB+</option>
                                         <option {{old('blood_type') == 'AB-' ? 'selected' : ''}}>AB-</option>
                                         <option {{old('blood_type') == 'other' ? 'selected' : ''}}>Other</option>
-                                    </select>
+                                    </select> --}}
                                 </div>
-                                <div class="col-md-4">
+                                {{-- <div class="col-md-4">
                                     <label for="inputReligion" class="form-label">Religion<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select id="inputReligion" class="form-select" name="religion" required>
                                         <option {{old('religion') == 'Islam' ? 'selected' : ''}}>Islam</option>
@@ -103,7 +103,7 @@
                                         <option {{old('religion') == 'Judaism' ? 'selected' : ''}}>Judaism</option>
                                         <option {{old('religion') == 'Others' ? 'selected' : ''}}>Other</option>
                                     </select>
-                                </div>
+                                </div> --}}
                                 <div class="col-md-4">
                                     <label for="inputPhone" class="form-label">Phone<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <input type="text" class="form-control" id="inputPhone" name="phone" placeholder="+880 01......" required value="{{old('phone')}}">
@@ -139,10 +139,10 @@
                             <div class="row mt-4 g-3">
                                 <h6>Academic Information</h6>
                                 <div class="col-md-6">
-                                    <label for="inputAssignToClass" class="form-label">Assign to class:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
+                                    <label for="inputAssignToClass" class="form-label">Assign to major:<sup><i class="bi bi-asterisk text-primary"></i></sup></label>
                                     <select onchange="getSections(this);" class="form-select" id="inputAssignToClass" name="class_id" required>
                                         @isset($school_classes)
-                                            <option selected disabled>Please select a class</option>
+                                            <option selected disabled>Please select a major</option>
                                             @foreach ($school_classes as $school_class)
                                                 <option value="{{$school_class->id}}" >{{$school_class->class_name}}</option>
                                             @endforeach
